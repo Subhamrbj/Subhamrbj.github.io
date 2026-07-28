@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham Bhattacherjee | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-color: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .skill-category h4 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER / PROFESSIONAL SUMMARY -->
+        <header>
+            <h1>Subham Bhattacherjee</h1>
+            <div class="subtitle">M.Tech CSE Student | AI, Machine Learning & Cloud Computing Enthusiast</div>
+            <p>Purba Bardhaman, West Bengal, India</p>
+            <div class="contact-links">
+                <a href="mailto:subhamrbjxez@gmail.com">Email Me</a> |
+                <a href="https://www.linkedin.com/in/subham-bhattacherjee-3a5691406" target="_blank">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <!-- ABOUT ME -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                    Motivated M.Tech Computer Science & Engineering student with a strong foundation in Artificial Intelligence, Machine Learning, Deep Learning, Python, Java, MySQL, and Cloud Computing. Passionate about developing intelligent software solutions and solving real-world problems. Seeking an entry-level Software Developer, AI/ML Engineer, or Cloud Engineer role.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="card">
+                <h3>Post-Pandemic Touchless Two-Layer Biometric Authentication System</h3>
+                <p><strong>Tech Stack:</strong> MATLAB, Computer Vision, Deep Learning</p>
+                <p>Developed a touchless authentication system using ID card detection and facial recognition to enhance security and hygiene standards.</p>
+            </div>
+
+            <div class="card">
+                <h3>Real-Time Vehicle Number Plate Detection & Recognition</h3>
+                <p><strong>Tech Stack:</strong> Python, OpenCV, Deep Learning, OCR</p>
+                <p>Built an automatic number plate recognition (ANPR) system using deep learning techniques for bounding box detection and OCR for text extraction.</p>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <p>Python, Java, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h4>AI & Machine Learning</h4>
+                    <p>Machine Learning, Deep Learning, Computer Vision, Image Segmentation</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Core CS & Database</h4>
+                    <p>Data Structures, DBMS, OOP, Operating Systems, Computer Networks, MySQL</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Frameworks</h4>
+                    <p>Git, GitHub, VS Code, Jupyter Notebook, Google Colab</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>M.Tech in Computer Science & Engineering</h3>
+                <p><strong>Kalyani University</strong> (2025 - 2027) — Pursuing</p>
+            </div>
+            <div class="card">
+                <h3>M.Sc. in Computer Science</h3>
+                <p><strong>Kalyani University</strong> (2025)</p>
+                <p>CGPA: 8.10 / 10 | First Class with Distinction</p>
+            </div>
+            <div class="card">
+                <h3>B.Sc. in Computer Science</h3>
+                <p><strong>St. Xavier's College, Burdwan</strong> (2023)</p>
+                <p>CGPA: 9.61 / 10 | University Rank 3</p>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>UGC NET Qualified:</strong> Qualified twice for Assistant Professor & PhD Eligibility.</li>
+                    <li><strong>University Rank 3:</strong> Achieved 3rd rank in B.Sc. Computer Science at The University of Burdwan.</li>
+                    <li><strong>Academic Distinction:</strong> Graduated with First Class with Distinction in M.Sc. Computer Science.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>© Subham Bhattacherjee | Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
