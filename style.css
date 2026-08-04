@@ -1,102 +1,93 @@
-/* CSS Variables for Clean Color Management */
-:root {
-    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    --card-bg: #1e293b;
-    --inner-card-bg: #0f172a;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-muted: #cbd5e1;
-    --accent-blue: #38bdf8;
-    --border-color: #334155;
-    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* Reset & Box Sizing */
-*, *::before, *::after {
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-family: var(--font-stack);
-    line-height: 1.6;
-    background: var(--bg-gradient);
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
     min-height: 100vh;
-    color: var(--text-primary);
-    padding: 30px 15px;
 }
 
-/* Main Container Card (Clean Edge, No Top Border) */
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: var(--card-bg);
-    padding: 45px 50px;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    width: 100%;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* Header Styling */
-header {
+.profile-header {
     text-align: center;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 25px;
-    margin-bottom: 30px;
 }
 
 .profile-img {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 15px auto;
-    display: block;
-    border: 2px solid #334155;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    border: 3px solid #38bdf8;
+    margin-bottom: 16px;
 }
 
-.profile-img:hover {
-    transform: scale(1.03);
-}
-
-header h1 {
+h1 {
     font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 6px;
+    color: #f8fafc;
+    margin-bottom: 8px;
 }
 
 .tagline {
-    color: var(--accent-blue);
-    font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    color: #38bdf8;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 
 .contact-info {
-    font-size: 0.92rem;
-    color: var(--text-secondary);
-    margin-bottom: 18px;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
 }
 
-/* Action Buttons */
-.btn-group {
+.email-link {
+    color: #38bdf8;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.email-link:hover {
+    color: #7dd3fc;
+}
+
+.button-group {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 9px 20px;
-    border-radius: 8px;
-    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    font-size: 14px;
     font-weight: 600;
+    border-radius: 6px;
     text-decoration: none;
     transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 .btn-linkedin {
@@ -118,82 +109,42 @@ header h1 {
     background-color: #475569;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 28px;
+.divider {
+    border: none;
+    border-top: 1px solid #334155;
+    margin: 28px 0;
 }
 
-h2 {
-    color: var(--accent-blue);
+.section {
+    margin-bottom: 24px;
+}
+
+.section h2 {
     font-size: 1.25rem;
-    font-weight: 700;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 8px;
-    margin-bottom: 16px;
+    color: #38bdf8;
+    margin-bottom: 12px;
 }
 
-ul {
-    padding-left: 20px;
+.section p {
+    line-height: 1.6;
+    color: #cbd5e1;
 }
 
-ul li {
-    margin-bottom: 8px;
-    color: var(--text-muted);
-}
-
-/* Dynamic Cards for Education & Projects */
 .card {
-    background: var(--inner-card-bg);
-    padding: 18px 22px;
-    margin-bottom: 14px;
-    border-left: 4px solid var(--accent-blue);
-    border-radius: 8px;
-    border-top: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-left: 4px solid #38bdf8;
+    padding: 16px 20px;
+    border-radius: 6px;
 }
 
 .card h3 {
-    font-size: 1.08rem;
-    color: var(--text-primary);
-    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #f8fafc;
+    margin-bottom: 4px;
 }
 
-.card p {
-    color: var(--text-secondary);
-    margin: 4px 0;
-}
-
-.card strong {
-    color: var(--text-muted);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 35px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    color: #64748b;
-    font-size: 0.85rem;
-}
-
-/* Responsive Design for Mobile Devices */
-@media (max-width: 600px) {
-    .container {
-        padding: 25px 20px;
-    }
-    header h1 {
-        font-size: 1.6rem;
-    }
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
+.card-subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
 }

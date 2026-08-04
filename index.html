@@ -6,93 +6,108 @@
     <meta name="description" content="Portfolio of Subham Bhattacherjee - M.Tech CSE Student, AI/ML & Cloud Enthusiast.">
     <title>Subham Bhattacherjee | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Open Graph Meta Tags for LinkedIn & Social Sharing -->
+    <meta property="og:title" content="Subham Bhattacherjee | Portfolio">
+    <meta property="og:description" content="M.Tech CSE Student specializing in AI, Machine Learning, Computer Vision, and Cloud Computing. 2x UGC NET Qualifier.">
+    <meta property="og:image" content="profile.jpeg">
+    <meta property="og:type" content="website">
 </head>
 <body>
-    <main class="container">
+
+    <div class="container">
         <!-- Header Section -->
-        <header>
+        <header class="profile-header">
             <img src="profile.jpeg" alt="Subham Bhattacherjee Headshot" class="profile-img" loading="eager">
             <h1>Subham Bhattacherjee</h1>
             <p class="tagline">M.Tech CSE Student | AI, Machine Learning & Cloud Computing Enthusiast</p>
+            
+            <!-- Contact Details (Phone removed, Clickable Email added) -->
             <p class="contact-info">
-                📍 Purba Bardhaman, West Bengal | 📞 +91-9733675840 | ✉️ subhamrbjxez@gmail.com
+                📍 Purba Bardhaman, West Bengal &nbsp;|&nbsp; ✉️ <a href="mailto:subhamrbjxez@gmail.com" class="email-link">subhamrbjxez@gmail.com</a>
             </p>
-            <div class="btn-group">
+
+            <div class="button-group">
                 <a href="https://linkedin.com/in/subham-bhattacherjee-3a5691406" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn Profile</a>
                 <a href="https://github.com/Subhamrbj" target="_blank" rel="noopener noreferrer" class="btn btn-github">GitHub Repository</a>
             </div>
         </header>
 
+        <hr class="divider">
+
         <!-- Professional Summary -->
-        <section class="about" aria-labelledby="summary-heading">
-            <h2 id="summary-heading">Professional Summary</h2>
+        <section class="section">
+            <h2>Professional Summary</h2>
             <p>Motivated M.Tech Computer Science & Engineering student with a strong foundation in Artificial Intelligence, Machine Learning, Deep Learning, Python, Java, MySQL, and Cloud Computing. Passionate about developing intelligent software solutions and solving real-world problems.</p>
         </section>
 
         <!-- Education -->
-        <section class="education" aria-labelledby="edu-heading">
-            <h2 id="edu-heading">Education</h2>
-            <div class="card edu-item">
+        <section class="section">
+            <h2>Education</h2>
+            <div class="card" style="margin-bottom: 12px;">
                 <h3>Kalyani University (2025 - 2027)</h3>
-                <p><strong>M.Tech in Computer Science & Engineering</strong> (Pursuing)</p>
+                <p class="card-subtitle"><strong>M.Tech in Computer Science & Engineering</strong> (Pursuing)</p>
             </div>
-            <div class="card edu-item">
+            <div class="card" style="margin-bottom: 12px;">
                 <h3>Kalyani University (2025)</h3>
-                <p><strong>M.Sc. Computer Science</strong> | CGPA: 8.10/10 (First Class with Distinction)</p>
+                <p class="card-subtitle"><strong>M.Sc. Computer Science</strong> | CGPA: 8.10/10 (First Class with Distinction)</p>
             </div>
-            <div class="card edu-item">
+            <div class="card">
                 <h3>St. Xavier's College, Burdwan (2023)</h3>
-                <p><strong>B.Sc. Computer Science</strong> | CGPA: 9.61/10 (University Rank 3, The University of Burdwan)</p>
+                <p class="card-subtitle"><strong>B.Sc. Computer Science</strong> | CGPA: 9.63/10 (University Rank 3, The University of Burdwan)</p>
             </div>
         </section>
 
         <!-- Technical Skills -->
-        <section class="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Technical Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Python, Java, SQL</li>
-                <li><strong>Database:</strong> MySQL</li>
-                <li><strong>Core CS:</strong> Data Structures, DBMS, OOP, Operating Systems, Computer Networks</li>
-                <li><strong>AI/ML & Cloud:</strong> Machine Learning, Deep Learning, Computer Vision, Image Segmentation, AWS Cloud</li>
-                <li><strong>Tools:</strong> Git, GitHub, VS Code, Jupyter Notebook, Google Colab</li>
-            </ul>
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="card">
+                <p style="margin-bottom: 8px;"><strong>Languages:</strong> Python, Java, SQL</p>
+                <p style="margin-bottom: 8px;"><strong>Database:</strong> MySQL</p>
+                <p style="margin-bottom: 8px;"><strong>Core CS:</strong> Data Structures, DBMS, OOP, Operating Systems, Computer Networks</p>
+                <p style="margin-bottom: 8px;"><strong>AI/ML & Cloud:</strong> Machine Learning, Deep Learning, Computer Vision, Image Segmentation, AWS Cloud</p>
+                <p><strong>Tools:</strong> Git, GitHub, VS Code, Jupyter Notebook, Google Colab</p>
+            </div>
         </section>
 
         <!-- Projects -->
-        <section class="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projects</h2>
-            <div class="card project-card">
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="card" style="margin-bottom: 12px;">
                 <h3>Cloud-Hosted Personal Portfolio</h3>
-                <p><strong>Tech Stack:</strong> AWS S3, HTML5, CSS3, Git, GitHub Pages</p>
+                <p class="card-subtitle" style="margin: 4px 0 8px 0;"><strong>Tech Stack:</strong> AWS S3, HTML5, CSS3, Git, GitHub Pages</p>
                 <p>Designed and deployed a responsive personal website hosted on Amazon S3 static website hosting, demonstrating core cloud infrastructure concepts.</p>
             </div>
-            <div class="card project-card">
+            <div class="card" style="margin-bottom: 12px;">
                 <h3>Post-Pandemic Touchless Two-Layer Biometric Authentication System</h3>
-                <p><strong>Tech Stack:</strong> MATLAB, Computer Vision, Deep Learning</p>
+                <p class="card-subtitle" style="margin: 4px 0 8px 0;"><strong>Tech Stack:</strong> MATLAB, Computer Vision, Deep Learning</p>
                 <p>Developed a touchless authentication system using ID card detection and face recognition.</p>
             </div>
-            <div class="card project-card">
+            <div class="card">
                 <h3>Real-Time Vehicle Number Plate Detection & Recognition</h3>
-                <p><strong>Tech Stack:</strong> Python, OpenCV, Deep Learning</p>
+                <p class="card-subtitle" style="margin: 4px 0 8px 0;"><strong>Tech Stack:</strong> Python, OpenCV, Deep Learning</p>
                 <p>Built an automatic number plate recognition system using deep learning and OCR.</p>
             </div>
         </section>
 
         <!-- Achievements -->
-        <section class="achievements" aria-labelledby="achievements-heading">
-            <h2 id="achievements-heading">Achievements</h2>
-            <ul>
-                <li>University Rank 3 in B.Sc. Computer Science, The University of Burdwan.</li>
-                <li>First Class with Distinction in M.Sc. Computer Science.</li>
-                <li>UGC NET Qualified (PhD Eligibility) - Twice.</li>
-                <li>AWS Educate Cloud Computing 101 Trained Badge.</li>
-            </ul>
+        <section class="section">
+            <h2>Achievements</h2>
+            <div class="card">
+                <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1;">
+                    <li>University Rank 3 in B.Sc. Computer Science, The University of Burdwan.</li>
+                    <li>First Class with Distinction in M.Sc. Computer Science.</li>
+                    <li>UGC NET Qualified - Twice.</li>
+                    <li>AWS Educate Cloud Computing 101 Trained Badge.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Footer -->
-        <footer>
+        <footer style="text-align: center; margin-top: 32px; color: #64748b; font-size: 0.85rem;">
             <p>&copy; 2026 Subham Bhattacherjee. Hosted on AWS S3 & GitHub Pages.</p>
         </footer>
-    </main>
+    </div>
+
 </body>
 </html>
